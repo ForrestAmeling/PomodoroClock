@@ -1,0 +1,228 @@
+/*heading*/
+
+h1 {
+  padding: 1%;
+  font-size: 220%;
+  margin: auto;
+  color: white;
+}
+
+body {
+  background-image: linear-gradient(135deg, #d8d08a, #bf7301);
+  background-position: fixed;
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.pomodoroClock {
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .8), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  width: 290px;
+  height: 478px;
+  background-color: #1F2025;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+
+/*box surrounding the workClock and breakClock*/
+
+.workTime,
+.breakTime {
+  width: 270px;
+  height: 137.5px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding:10px 0;
+}
+
+
+/*sets width of clocks inorder to position*/
+
+.flip-clock-wrapper {
+  width: 300px;
+}
+
+.workClock,
+.breakClock {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  zoom: 0.9;
+  -moz-transform: scale(0.9);
+}
+
+
+/*changes the text-size and color of the minutes and seconds heading to 14px and white */
+
+.flip-clock-label {
+  color: #FFF !important;
+  font-size: 15px !important;
+}
+
+
+/*havent coded yet but the background will fill as the clock runs... similar to a cell phone battery bar*/
+
+.workMeter,
+.breakMeter {
+  width: 270px;
+  height: 37.5px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+/*text inside meters*/
+
+h4 {
+  padding-top: 3.00px;
+}
+
+
+/*holds the work and break duration display and controls*/
+
+.timeBox {
+  margin: auto;
+  margin-top: -7px;
+  width: 140px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-left: 11px;
+  margin-right: -16px;
+}
+
+
+/*display the work and break set time*/
+
+.timeBox .time {
+  float: left;
+  user-select: none;
+  background: #353741;
+  width: 100px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+
+/*buttons to change the set work and break time*/
+
+.timeBox .addSub {
+  float: left;
+  cursor: pointer;
+  background: #353741;
+  width: 30px;
+  height: 30px;
+  margin-top: 13px;
+  margin-left: 26.6px;
+  user-select: none;
+}
+
+
+/*when pressed + and - change to the initial color to show action*/
+
+.row .timeBox .addSub:active {
+  background: #353741;
+  color: white
+}
+
+.timeBox .addSub:hover {
+  background: grey;
+  color: white;
+}
+
+
+/*container holdingthe start and stop buttons*/
+
+.startStop {
+  margin: auto;
+  background: #353741;
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .8), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  width: 290px;
+  text-align: center;
+  color: white;
+  padding: 20px 10px;
+}
+
+
+/*start and stop buttons*/
+
+.startStop span {
+  cursor: pointer;
+  background: linear-gradient(135deg, #d8d08a, #bf7301);
+  border-radius: 5px;
+  padding: 10px 36px;
+  margin-left: 10px;
+  margin-right: 10px;
+  user-select: none;
+  font-size: 20px;
+}
+
+.startStop span.start:active {
+  background: linear-gradient(135deg, #d8d08a, #bf7301);
+  color: white
+}
+
+.startStop span.stop:active {
+  background: linear-gradient(135deg, #d8d08a, #bf7301);
+  color: white
+}
+
+.startStop .stop:hover {
+  background: red;
+  color: white;
+}
+
+.startStop .start:hover {
+  background: orange;
+  color: white;
+}
+
+
+/*element under the reset button to continue the shadow around the clock*/
+
+.resetShadow {
+  margin: auto;
+  background: #353741;
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .8), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  width: 290px;
+  text-align: center;
+  color: white;
+}
+
+
+/*reset button*/
+
+.reset {
+  margin: auto;
+  width: 290px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  clear: left;
+  background: linear-gradient(135deg, #d8d08a, #bf7301);
+  cursor: pointer;
+  user-select: none;
+  padding-top:3px;
+}
+
+.bottom .reset:active {
+  background: linear-gradient(135deg, #d8d08a, #bf7301);
+  color: white
+}
+
+.reset:hover {
+  background: blue;
+  color: white;
+}
+
+h5 {
+  font-size: 20px;
+}

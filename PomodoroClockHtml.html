@@ -1,0 +1,67 @@
+<header>
+  <h1>POMODORO CLOCK</h1>
+</header>
+
+<body>
+  <div class='pomodoroClock'>
+    <!--Work-->  
+    <div class='workTime'>        
+     <span class="workClock">
+      </span>
+    </div>
+    
+        
+    <div class='workMeter'>
+      <h4>Work</h4>
+    </div>
+    <!--Break-->
+    <div class='breakTime'>
+      <div class="breakClock">
+      </div> 
+    </div>
+        
+    <div class='breakMeter'>
+      <h4>Break</h4>
+    </div>
+        
+    <!--Timer controls and Reset button-->
+    <div class='row'>
+      <div class='timeBox'>
+        <h5>Work</h5>
+      </div>
+      <div class='timeBox'>
+        <h5>Break</h5>
+      </div>
+    </div>
+        
+    <!--workClock and breakClock controls-->
+    <div class='row'>
+      <div class='timeBox'>
+        <span class='time' id='workTime'>25</span>
+      </div>
+      <div class='timeBox'>
+        <span class='time' id='breakTime'>5</span>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='timeBox'>
+        <span class="addSub" id='plusWork'>+</span>
+        <span class="addSub" id='minusWork'>-</span>
+      </div>          
+      <div class='timeBox'>
+        <span class="addSub" id='plusBreak'>+</span>
+        <span class="addSub" id='minusBreak'>-</span>
+      </div>
+    </div>
+  </div>
+
+  <!--Start Stop buttons-->
+  <div class='startStop'>
+    <span class="start" id='start'>Start</span>
+    <span class="stop" id='stop'>Stop </span>
+  </div>
+  <div class='bottom'>
+    <div class='reset' id='reset'>Reset
+    </div>
+  </div>
+</body>
